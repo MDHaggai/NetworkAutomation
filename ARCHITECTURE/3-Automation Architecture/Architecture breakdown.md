@@ -1,107 +1,97 @@
-# NetworkAutomation
-Orchestration, programmability and automation of an enterprise network 
-
-1)Problem Statement 
-
-Enterprise networks are increasingly complex and difficult to manage, particularly from a security 
-perspective. Traditional network management practices are manual, prone to errors, and often 
-inadequate in addressing the sophisticated and evolving security threats. There's a critical need for an 
-approach that automates routine tasks, provides programmable control over network resources, enables 
-rapid reconfiguration of network settings in response to changing security threats, and ensures 
-consistent application of security policies across the network.
+#Phase 1: Start read-only processes
 
 
-2)Objectives 
+Phase 1 provides basic functionality through three functions: the automation orchestration system, the UI and the device abstraction layer. This phase starts with automated, read-only processes that archive configurations, collect troubleshooting data and validate network configurations against templates.
 
-2.1 General Objective
-
-To design and implement a framework for the orchestration, programmability, and automation of an 
-enterprise network using GNS3, thereby not only increasing operational efficiency and reducing manual 
-intervention but also significantly enhancing the network's security against evolving threats.
-
-2.3 Specific Objectives
-
-✓ To develop a virtualized network environment in GNS3 that simulates an enterprise network, 
-incorporating security at its core.
-✓ To integrate network automation tools and scripts that support the automatic application and 
-enforcement of security policies, configuration backups, and immediate response to security 
-incidents.
-✓ To implement network programmability features using secure APIs to enable dynamic control, 
-management, and reconfiguration of network devices in real-time, based on security needs.
-✓ To utilize network orchestration tools to manage and coordinate network services and resources 
-efficiently, with a focus on security, across the simulated enterprise network.
-2
-✓ To ensure comprehensive monitoring and analytics for enhanced visibility and early detection of 
-security threats.
+The elements in Phase 1 include the following:
 
 
-3) Methodology, Tools, Equipment 
+Automation orchestration:
 
-• Methodology: 
-Adopting an iterative development process with a focus on security by design, 
-incorporating phases of network design, security integration, simulation, automation scripting, 
-and rigorous security testing.
-
-• Tools:
-✓ GNS3 for network simulation and modeling with security scenarios.
-✓ Security-enhanced network automation tools like Ansible, Python (with security-focused 
-libraries), to automate security policy application, incident response, and security 
-configurations.
-✓ RESTful APIs for secure programmable access to network devices.
-✓ Security monitoring and analytics tools integrated into the simulated environment.
+The core orchestration engine controls the automation process. It includes scaling features, like parallel processing and distributed agents. Several commercial products and open source packages are available to perform this function.
 
 
-• Equipment: Computers with sufficient resources to run GNS3 simulations and security tools, 
-and software environments for development and testing.
+UI:
+
+Commercial products usually feature a GUI and an API, which is critical for later phases of automation. Open source projects might rely on a command-line interface for administrative control and an API for programmatic control.
 
 
-4) Basic Skills Needed 
-✓ Deep understanding of network fundamentals, protocols, and security principles.
-✓ Proficiency with GNS3 for simulating complex network environments with security 
-considerations.
-✓ Programming and scripting skills, especially Python, with a focus on writing secure automation 
-scripts.
-✓ Familiarity with implementing and managing network security policies, intrusion 
-detection/prevention techniques, and responding to security incidents.
-✓ Knowledge of secure coding practices and API security.
+Abstraction layer:
+
+The abstraction layer provides a model that hides the differences between device vendors, greatly simplifying the network device interface. The abstraction layer might be built into some orchestration systems.
 
 
-5) Awaited Results 
+#Phase 2: Add a network source of truth
 
-✓ A secure, fully functional simulated enterprise network in GNS3, equipped with advanced 
-automation and programmability features focused on security.
-✓ A demonstrable improvement in the network's resilience against security threats, with automated 
-responses to incidents and consistent security policy enforcement.
-✓ Enhanced network agility, enabling rapid adaptation of security configurations in response to 
-emerging threats.
-✓ Comprehensive documentation and guidelines for deploying, managing, and securing the network 
-automation and programmability framework.
-3
- 
-6) Chronogram 
-Phase 1: Security-Driven Design and Research (1week): Define security requirements, select 
-appropriate security tools and technologies, and design the network architecture with security as a 
-core component.
-Phase 2: Secure Simulation Setup (3weeks): Establish the enterprise network in GNS3, 
-ensuring the integration of security features and monitoring tools.
-Phase 3: Security Automation and Programmability Implementation (6weeks): Develop and 
-integrate network automation scripts with a focus on security; implement secure programmability 
-features.
-Phase 4: Security Testing and Optimization (1week): Conduct extensive security testing, 
-including penetration testing and vulnerability assessments; optimize based on findings for 
-enhanced security.
-Phase 5: Documentation and Final Presentation (2weeks): Prepare detailed documentation on 
-security integration, automation practices, and guidelines; present the project outcomes, 
-emphasizing the security enhancements.
+Phase 2 adds a network source of truth (NSoT) database and an interface to a trouble-ticketing system. The elements in this phase include the following:
 
 
-7)References
-Edelman, J., Lowe, S. S., & Oswalt, M. (2017). Network Programmability and Automation: Skills for the 
-Next-Generation Network Engineer. O'Reilly Media.
-Looney, J., & Smith, S. (2016). Automating Junos Administration: Doing More with Less. O'Reilly 
-Media.
-Ratan, A. (2018). Practical Network Automation: A beginner's guide to automating and optimizing 
-networks using Python, Ansible, and more. Packt Publishing.
-Geerling, J. (2015). Ansible for DevOps: Server and configuration management for humans. Lean 
-Publishing.
-Welsh, "RedNectar" C., & Dainard, G. (2015). GNS3 Network Simulation Guide. Packt Publishing
+NSoT database:
+
+The NSoT stores information about the desired network state that the automation orchestration system uses to validate -- and, in later stages, correct -- the network's operation. This data might include address assignments, network protocol neighbors, interface operational state and reachability.
+
+
+Automatic trouble ticketing:
+
+An interface to a trouble-ticketing system enables the automation orchestration system to create tickets when the network state and the NSoT differ. Remediation is initially manual but becomes increasingly automated as the organization matures.
+
+
+#Phase 3: Store configuration templates and scripts
+
+
+Phase 3 begins the transition to an infrastructure-as-code operational model. The elements in this phase include the following:
+
+
+
+Source code management repository:
+
+A source code repository, typically based on Git, is used to store configuration templates, saved configurations and scripts. It is tightly integrated with the automation orchestration system to build device configurations from stored templates and NSoT data -- for example, generating the configurations for all network equipment for a data center pod.
+
+
+Workflows:
+
+Phase 3 is where the workflows begin transitioning from manual to automated. Workflows might be instantiated through scripts that are stored in the source code repository. Commercial products often provide multiple mechanisms for controlling workflows, including graphical editors and APIs.
+
+
+Chatbots:
+
+Chatbots enable the automation system to communicate workflow and state information to unified communications chat rooms in which network staff collaborate on implementation and troubleshooting. This is a particularly effective mechanism for distributed network teams where members might work remotely.
+
+
+
+#Phase 4: Implement network feedback
+
+Phase 4 provides a feedback mechanism from the network. Up to this point, the network has provided little feedback, except for validation checks against the NSoT data. The elements in Phase 4 include the following:
+
+
+Telemetry and monitoring:
+
+Historically, network monitoring has relied on Simple Network Management Protocol, but more modern implementations use streaming telemetry. Networks will need to use both mechanisms for some time to come.
+
+
+Monitoring and management databases:
+
+The monitored data needs to be stored somewhere, either in a relational database for relationship-type data -- such as device type and interface list -- or in a time-series database for interface performance variables.
+Action triggers. Monitoring the network is beneficial only if the results drive responses. Action triggers use either rule sets or machine learning to detect anomalies, issue alerts and open trouble tickets. More advanced implementations trigger automated workflows to begin remediation without human intervention, such as routing around a failed link.
+
+
+
+#Phase 5: Automate change testing and validation
+
+Phase 5, the last phase in the architecture, is to automate change testing and validation. Here's what's involved:
+
+
+Virtual network testing:
+
+The principal driver of network change control is the practice of testing a change in the lab before deploying it into production. The lab uses virtual, software-simulated devices to model the production network's key parameters. Proposed changes instantiate the virtual network, run pre-change tests to validate the lab is functioning as intended, apply the change, and run post-change tests to validate the desired result was achieved.
+
+
+Change validation testing:
+
+If the virtual network testing succeeds, the change can be applied to the production network. The release follows the same three-step process: validation of the pre-change state, application of the change and then post-change validation of the resulting state.
+The end goal
+
+
+  The network automation architecture described in this project is a framework. Network teams can modify it to fit their organization's needs and to accommodate the capabilities of the tools they select.
+
+   The eventual goal is to build a continuous integration, continuous delivery and continuous deployment process in which small, well-defined network changes are automatically deployed only after passing stringent tests. This practice, known as NetOps or NetDevOps, enables teams to migrate their network to infrastructure as code using many of the same concepts and techniques as successful software development methods.
