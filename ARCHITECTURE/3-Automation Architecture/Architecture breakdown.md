@@ -21,7 +21,17 @@ Abstraction layer:
 The abstraction layer provides a model that hides the differences between device vendors, greatly simplifying the network device interface. The abstraction layer might be built into some orchestration systems.
 
 
+
+
+
+
+
 #Phase 2: Add a network source of truth
+
+
+
+
+
 
 Phase 2 adds a network source of truth (NSoT) database and an interface to a trouble-ticketing system. The elements in this phase include the following:
 
@@ -36,7 +46,15 @@ Automatic trouble ticketing:
 An interface to a trouble-ticketing system enables the automation orchestration system to create tickets when the network state and the NSoT differ. Remediation is initially manual but becomes increasingly automated as the organization matures.
 
 
+
+
+
+
 #Phase 3: Store configuration templates and scripts
+
+
+
+
 
 
 Phase 3 begins the transition to an infrastructure-as-code operational model. The elements in this phase include the following:
@@ -59,7 +77,14 @@ Chatbots enable the automation system to communicate workflow and state informat
 
 
 
+
+
 #Phase 4: Implement network feedback
+
+
+
+
+
 
 Phase 4 provides a feedback mechanism from the network. Up to this point, the network has provided little feedback, except for validation checks against the NSoT data. The elements in Phase 4 include the following:
 
@@ -76,7 +101,14 @@ Action triggers. Monitoring the network is beneficial only if the results drive 
 
 
 
+
+
+
 #Phase 5: Automate change testing and validation
+
+
+
+
 
 Phase 5, the last phase in the architecture, is to automate change testing and validation. Here's what's involved:
 
