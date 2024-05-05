@@ -1,107 +1,43 @@
-# NetworkAutomation
-Orchestration, programmability and automation of an enterprise network 
-
-1)Problem Statement 
-
-Enterprise networks are increasingly complex and difficult to manage, particularly from a security 
-perspective. Traditional network management practices are manual, prone to errors, and often 
-inadequate in addressing the sophisticated and evolving security threats. There's a critical need for an 
-approach that automates routine tasks, provides programmable control over network resources, enables 
-rapid reconfiguration of network settings in response to changing security threats, and ensures 
-consistent application of security policies across the network.
+# NetworkAutomation Case Study
+OBJECTIVE: To orchestrate, program and automate an enterprise network for a Bank
 
 
-2)Objectives 
-
-2.1 General Objective
-
-To design and implement a framework for the orchestration, programmability, and automation of an 
-enterprise network using GNS3, thereby not only increasing operational efficiency and reducing manual 
-intervention but also significantly enhancing the network's security against evolving threats.
-
-2.3 Specific Objectives
-
-✓ To develop a virtualized network environment in GNS3 that simulates an enterprise network, 
-incorporating security at its core.
-✓ To integrate network automation tools and scripts that support the automatic application and 
-enforcement of security policies, configuration backups, and immediate response to security 
-incidents.
-✓ To implement network programmability features using secure APIs to enable dynamic control, 
-management, and reconfiguration of network devices in real-time, based on security needs.
-✓ To utilize network orchestration tools to manage and coordinate network services and resources 
-efficiently, with a focus on security, across the simulated enterprise network.
-2
-✓ To ensure comprehensive monitoring and analytics for enhanced visibility and early detection of 
-security threats.
-
-
-3) Methodology, Tools, Equipment 
-
-• Methodology: 
-Adopting an iterative development process with a focus on security by design, 
-incorporating phases of network design, security integration, simulation, automation scripting, 
-and rigorous security testing.
-
-• Tools:
-✓ GNS3 for network simulation and modeling with security scenarios.
-✓ Security-enhanced network automation tools like Ansible, Python (with security-focused 
-libraries), to automate security policy application, incident response, and security 
-configurations.
-✓ RESTful APIs for secure programmable access to network devices.
-✓ Security monitoring and analytics tools integrated into the simulated environment.
-
-
-• Equipment: Computers with sufficient resources to run GNS3 simulations and security tools, 
-and software environments for development and testing.
+A Bank Company Ltd. is a Cameroon-owned company that deals with Banking and Insurance. The company is intending to expand its services across the African continent having the first branch to be located in Yaounde, Cameroon. The company has secured a four-story building to operate within the Camerron capital city. Therefore, the company would like to allow sourcing the knowledge from a Network Expert from t to design and implement their company network. A Network Engineer to take over this role should carefully read down the requirements then model the design and implement the network based on the company's needs. Each floor has departments as provided in the table below.;
+Card image cap
+Use a software modeling tool to visualize the network topology (Use Hierarchical Network Design
+- Software Modelling Tools: MS Visio, Visual Paradigm, or Draw.io for modeling network design.
+Use any of the following network simulation software to implement the above topology.
+- Simulation software: Cisco Packet tracer or GNS3 for design and implementation.
+Use OSPF as the routing protocol to advertise routes.
+Each department is required to have a wireless network for the users.
+Each department except the server room will be anticipated to have around 60 users both wired and wireless users.
+Host devices in the network are required to obtain IPv4 addresses automatically.
+Devices in all the departments are required to communicate with each other.
+Create HTTP, and E-mail servers.
+All devices in the network are expected to obtain an IP address dynamically from the dedicated DHCP servers located at the server room.
+Configure SSH in all the routers for remote login.
+Configure the basic configuration of the devices: Hostnames, Line Console and Enable passwords, Banner messages Disable domain IP lookup, encrypt all configured passwords.
+Each department should be in a different VLAN and subnetwork; VLANs you will use in your case, e.g. 10, 20, 30… etc..
+Planning of IP Addresses: You have been given 192.168.10.0 as the base address for this network. Do subnetting based on the number of hosts in every department as provided above. Identify subnet mask, useable IP address range, and broadcast address for each subnet.
+End Device Configurations: Configure all the end devices in the network with the appropriate IP address based on the calculations above.
+Configure port-security: Use sticky command to obtain MAC Address and Violation mode of the shutdown.
+Test and Verifying Network Communication.
+Technologies Implemented
+Creating a network topology using Cisco Packet Tracer.
+Hierarchical Network Design.
+Connecting Networking devices with Correct cabling.
+Configuring Basic device settings.
+Creating VLANs and assigning ports VLAN numbers.
+Subnetting and IP Addressing.
+Configuring Inter-VLAN Routing on the Multilayer switches (Switch Virtual Interface).
+Configuring Dedicated DHCP Server device to provide dynamic IP allocation.
+Configuring SSH for secure Remote access.
+Configuring OSPF as the routing protocol.
+Configuring switchport security or Port-Security on the switches.
+Configuring WLAN or wireless network (Cisco Access Point).
+Host Device Configurations.
+Test and Verifying Network Communication.
+Network Topology Created
+The network topology below satisfy the user requirements above and everything is verified, tested and working fine. You can get source file (Packet Tracer File) or watch on YouTube below.
 
 
-4) Basic Skills Needed 
-✓ Deep understanding of network fundamentals, protocols, and security principles.
-✓ Proficiency with GNS3 for simulating complex network environments with security 
-considerations.
-✓ Programming and scripting skills, especially Python, with a focus on writing secure automation 
-scripts.
-✓ Familiarity with implementing and managing network security policies, intrusion 
-detection/prevention techniques, and responding to security incidents.
-✓ Knowledge of secure coding practices and API security.
-
-
-5) Awaited Results 
-
-✓ A secure, fully functional simulated enterprise network in GNS3, equipped with advanced 
-automation and programmability features focused on security.
-✓ A demonstrable improvement in the network's resilience against security threats, with automated 
-responses to incidents and consistent security policy enforcement.
-✓ Enhanced network agility, enabling rapid adaptation of security configurations in response to 
-emerging threats.
-✓ Comprehensive documentation and guidelines for deploying, managing, and securing the network 
-automation and programmability framework.
-3
- 
-6) Chronogram 
-Phase 1: Security-Driven Design and Research (1week): Define security requirements, select 
-appropriate security tools and technologies, and design the network architecture with security as a 
-core component.
-Phase 2: Secure Simulation Setup (3weeks): Establish the enterprise network in GNS3, 
-ensuring the integration of security features and monitoring tools.
-Phase 3: Security Automation and Programmability Implementation (6weeks): Develop and 
-integrate network automation scripts with a focus on security; implement secure programmability 
-features.
-Phase 4: Security Testing and Optimization (1week): Conduct extensive security testing, 
-including penetration testing and vulnerability assessments; optimize based on findings for 
-enhanced security.
-Phase 5: Documentation and Final Presentation (2weeks): Prepare detailed documentation on 
-security integration, automation practices, and guidelines; present the project outcomes, 
-emphasizing the security enhancements.
-
-
-7)References
-Edelman, J., Lowe, S. S., & Oswalt, M. (2017). Network Programmability and Automation: Skills for the 
-Next-Generation Network Engineer. O'Reilly Media.
-Looney, J., & Smith, S. (2016). Automating Junos Administration: Doing More with Less. O'Reilly 
-Media.
-Ratan, A. (2018). Practical Network Automation: A beginner's guide to automating and optimizing 
-networks using Python, Ansible, and more. Packt Publishing.
-Geerling, J. (2015). Ansible for DevOps: Server and configuration management for humans. Lean 
-Publishing.
-Welsh, "RedNectar" C., & Dainard, G. (2015). GNS3 Network Simulation Guide. Packt Publishing
