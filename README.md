@@ -2,7 +2,9 @@
 
 
 
-A Bank Company Ltd. is a Cameroon-owned company that deals with Banking and Insurance. The company is intending to expand its services across the African continent having the first branch to be located in Yaounde, Cameroon. The company has secured a four-story building to operate within the Camerron capital city. Therefore, the company would like to allow sourcing the knowledge from a Network Expert from t to design and implement their company network. A Network Engineer to take over this role should carefully read down the requirements then model the design and implement the network based on the company's needs. Each floor has departments as provided in the table below.;
+A Bank Company Ltd. is a Cameroon-owned company that deals with Banking and Insurance. The company is intending to expand its services across the African continent having the first branch to be located in Yaounde, Cameroon. The company has secured a four-story building to operate within the Camerron capital city. Therefore, the company would like to allow sourcing the knowledge from a Network Expert from t to design and implement their company network. A Network Engineer to take over this role should carefully read down the requirements then model the design and implement the network based on the company's needs. Each floor has departments as provided in the table below.;.
+
+
 
 ![Screenshot 2024-05-05 132804](https://github.com/LKLespa/creative-skills-hub-2/assets/123896407/4106cfd0-1e89-40f0-9f5c-b300cf42cd97)
 
@@ -51,6 +53,9 @@ Utilize GNS3 for designing and implementing a fully automated network to support
 - Visualization and Reporting:
 Network Topology Documentation: Utilize GNS3 to create detailed network topology diagrams that reflect all configurations and setups for record-keeping and troubleshooting.
 
-The network topology below satisfy the user requirements above and everything is verified, tested and working fine. You can get source file (Packet Tracer File) or watch on YouTube below.
+The network topology below satisfy the user requirements
+
+![Network architecture drawio](https://github.com/MDHaggai/NetworkAutomation/assets/123896407/1caea073-6c63-41ae-82ef-d4146dc4db5c)
+
 
 
