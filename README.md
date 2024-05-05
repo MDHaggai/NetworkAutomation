@@ -3,7 +3,11 @@ OBJECTIVE: To orchestrate, program and automate an enterprise network for a Bank
 
 
 A Bank Company Ltd. is a Cameroon-owned company that deals with Banking and Insurance. The company is intending to expand its services across the African continent having the first branch to be located in Yaounde, Cameroon. The company has secured a four-story building to operate within the Camerron capital city. Therefore, the company would like to allow sourcing the knowledge from a Network Expert from t to design and implement their company network. A Network Engineer to take over this role should carefully read down the requirements then model the design and implement the network based on the company's needs. Each floor has departments as provided in the table below.;
-Card image cap
+
+![Screenshot 2024-05-05 132804](https://github.com/LKLespa/creative-skills-hub-2/assets/123896407/4106cfd0-1e89-40f0-9f5c-b300cf42cd97)
+
+
+
 Use a software modeling tool to visualize the network topology (Use Hierarchical Network Design
 - Software Modelling Tools: MS Visio, Visual Paradigm, or Draw.io for modeling network design.
 Use any of the following network simulation software to implement the above topology.
