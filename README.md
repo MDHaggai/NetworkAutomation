@@ -1,5 +1,5 @@
 # NetworkAutomation Case Study
-OBJECTIVE: To orchestrate, program and automate an enterprise network for a Bank
+
 
 
 A Bank Company Ltd. is a Cameroon-owned company that deals with Banking and Insurance. The company is intending to expand its services across the African continent having the first branch to be located in Yaounde, Cameroon. The company has secured a four-story building to operate within the Camerron capital city. Therefore, the company would like to allow sourcing the knowledge from a Network Expert from t to design and implement their company network. A Network Engineer to take over this role should carefully read down the requirements then model the design and implement the network based on the company's needs. Each floor has departments as provided in the table below.;
@@ -8,66 +8,48 @@ A Bank Company Ltd. is a Cameroon-owned company that deals with Banking and Insu
 
 
 
-Use a software modeling tool to visualize the network topology (Use Hierarchical Network Design
+## Objective: 
+Utilize GNS3 for designing and implementing a fully automated network to support an organizational infrastructure with detailed hierarchical network design.
 
-- Software Modelling Tools: MS Visio, Visual Paradigm, or Draw.io for modeling network design.
-Use any of the following network simulation software to implement the above topology.
-- Simulation software: GNS3 for design and implementation to ensure automation.
-
-- 
-Use OSPF as the routing protocol to advertise routes.
-
-Each department is required to have a network for the users.
-
-Each department except the server room will be anticipated to have around 60 users.
-
-Host devices in the network are required to obtain IPv4 addresses automatically.
-
-Devices in all the departments are required to communicate with each other.
-
-Create HTTP, and E-mail servers.
-
-All devices in the network are expected to obtain an IP address dynamically from the dedicated DHCP servers located at the server room.
-
-Configure SSH in all the routers for remote login, cofiguration pushing and for automation.
-
-Configure the basic configuration of the devices: Hostnames, Line Console and Enable passwords, Banner messages Disable domain IP lookup, encrypt all configured passwords.
-
-Each department should be in a different VLAN and subnetwork; VLANs you will use in your case, e.g. 10, 20, 30… etc..
-
-- Planning of IP Addresses: You have been given 192.168.10.0 as the base address for this network. Do subnetting based on the number of hosts in every department as provided above. Identify subnet mask, useable IP address range, and broadcast address for each subnet.
-End Device Configurations: Configure all the end devices in the network programmatically from the server room with the appropriate IP address based on the calculations above.
-
--Configure port-security: Use sticky command to obtain MAC Address and Violation mode of the shutdown.
--Test and Verifying Network Communication.
-
-- Technologies Implemented
-Creating a network topology using GN3.
-
-Hierarchical Network Design.
-
-Configuring Basic device settings.
-
-Creating VLANs and assigning ports VLAN numbers.
-
-Subnetting and IP Addressing.
-
-Configuring Inter-VLAN Routing on the Multilayer switches (Switch Virtual Interface).
-
-Configuring Dedicated DHCP Server device to provide dynamic IP allocation.
-
-Configuring SSH for secure Remote access and Automation.
-
-Configuring OSPF as the routing protocol.
-
-Configuring switchport security or Port-Security on the switches(programmatically).
-
-
-Host Device Configurations.
-
-Test and Verifying Network Communication.
-
-Network Topology Created
+## Tools and Software:
+- Modeling Tools:
+   Use MS Visio, Visual Paradigm, or Draw.io to visually represent the hierarchical network design.
+- Simulation Software:
+   Deploy GNS3 for network simulation to ensure effective design and automation.
+## Network Configuration and Setup:
+- Routing Protocol:
+   Implement OSPF for efficient routing and route advertisement across the network.
+- Network Segmentation:
+  Each department will have a dedicated network segment accommodating approximately 60 users. The server room will act as the central node for network administration and does not require standard user configurations.
+- IP Address Management:
+   Automate IPv4 address assignment using DHCP. The DHCP servers will be centrally located in the server room for dynamic IP management across all devices.
+- Inter-Department Communication:
+  Ensure all departmental networks are interconnected, allowing seamless communication between different segments.
+- Server Configuration:
+ Establish essential services by setting up HTTP and Email servers within the network infrastructure.
+## Security and Administration:
+- SSH Configuration:
+  Enable SSH on all routers to facilitate secure remote logins, configuration updates, and network automation scripts.
+- Device Configuration Basics:
+ Configure hostnames, line console settings, enable passwords, and banner messages. Implement security measures such as disabling domain IP lookup and encrypting all configured passwords.
+- VLAN and Subnetworking:
+ Assign each department to a unique VLAN (e.g., VLAN 10, 20, 30, etc.). Perform subnetting based on the provided base address 192.168.10.0, calculating subnet masks, usable IP address ranges, and broadcast addresses for each subnet.
+- Port Security:
+   Implement switchport security using the sticky MAC address feature and configure violation modes to shutdown upon security breaches.
+## Automation and Scripting:
+- End Device Configurations:
+   Program all end devices from the server room using scripts that assign IP addresses based on the subnetting results.
+- Inter-VLAN Routing:
+   Configure Multilayer switches with Switch Virtual Interfaces (SVIs) for handling routing between VLANs.
+- DHCP Configuration:
+  Set up dedicated DHCP servers to automatically distribute IP addresses across the network.
+## Testing and Verification:
+- Network Communication Tests:
+   Conduct thorough tests to verify that all network communications function correctly within and between VLANs. Check the responsiveness of HTTP and Email servers.
+- Security Audits:
+   Perform security checks to ensure that SSH and port-security configurations meet the organizational security standards.
+- Visualization and Reporting:
+Network Topology Documentation: Utilize GNS3 to create detailed network topology diagrams that reflect all configurations and setups for record-keeping and troubleshooting.
 
 The network topology below satisfy the user requirements above and everything is verified, tested and working fine. You can get source file (Packet Tracer File) or watch on YouTube below.
 
