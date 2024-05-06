@@ -658,7 +658,7 @@ highlight the growing sophistication of network automation technologies but also
 need for continuous innovation in this field.
 
   In conclusion, the literature review presented in Chapter 2 has thoroughly explored the 
-multifaceted landscape of network automation, examining its evolution, the pivotal role of opensource tools like Linux and Python, and the significant implications for security and future 
+multifaceted landscape of network automation, examining its evolution, the pivotal role of opensource tools like Linux and Python, and the significant implications for security and future 
 trends. We have seen how network automation is not just a technological shift but a strategic 
 reorientation towards more efficient, flexible, and secure network management. The discussions 
 underscore the critical nature of programmability and vendor neutrality, the challenges of 
