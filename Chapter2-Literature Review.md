@@ -69,27 +69,31 @@ the stage for the research by reflecting it on the canvas of network technology 
 achieving the latter objective, that review helps the study achieve its first objective—
 comparison—by identifying the gaps, controversies, and recent discoveries supporting the 
 rationale of the research topically.
+
  The historical context presented in the available literature suggests a profound transition from 
 manual and time-consuming practices in network management to advanced automated methods. 
-At first, network management began with systems that were vendor-specific and demanded time consuming manual efforts from configuration to maintenance. According to the documented 
-sources, including the given two seminal PDFs – one of network programmability and another 
-one of SDN’s history – more flexible and viable management strategies were necessary when it 
-came to big and complicated networks.
-The emergence of Software-Defined Networking (SDN) marked a significant milestone in this 
+At first, network management began with systems that were vendor-specific and demanded time consuming manual efforts from configuration to maintenance. According to the documented  
+sources, including the given two seminals one of network programmability and another 
+one of SDN’s history  more flexible and viable management strategies were necessary when it 
+came to big and complicated networks.  
+   The emergence of Software-Defined Networking (SDN) marked a significant milestone in this 
 evolution, introducing a paradigm where network control is decoupled from the hardware and 
 centralized in software-based controllers. This development is critically examined in the 
 literature, particularly through the lens of its promise and the practical challenges it poses. SDN's 
 ability to streamline network management and reduce operational complexity has been widely 
 celebrated; however, its deployment and integration with existing infrastructures continue to 
-pose significant challenges, including issues related to security, compatibility, and vendor lockin.
- In response to some of these challenges, there has been a notable pivot towards leveraging 
+pose significant challenges, including issues related to security, compatibility, and vendor lock in.
+
+  In response to some of these challenges, there has been a notable pivot towards leveraging 
 open-source tools and languages, which promise greater flexibility and vendor neutrality. The 
 use of Linux and Python in network automation is particularly noteworthy. Linux offers a robust, 
 scalable, and secure environment for deploying a wide array of network applications and 
 services, while Python provides powerful scripting capabilities that are essential for automating 
-complex network operations. This review critically assesses how these tools have been employed 
+complex network operations.  
+This review critically assesses how these tools have been employed 
 to address specific network automation tasks, evaluating both their strengths and the limitations 
 they encounter in real-world applications.
+
  Moreover, the review addresses the critical aspect of vendor neutrality—an essential 
 consideration for ensuring that network solutions are sustainable and adaptable across different 
 technological ecosystems without being tied to specific hardware or software vendors. This 
@@ -103,6 +107,7 @@ and necessities in network technology, particularly in automating and simplifyin
 eliminate physical labor. Additionally, the review explores the controversies surrounding 
 automation, such as the potential for increased security vulnerabilities and the challenges of 
 maintaining system integrity in a highly automated environment.
+
  This literature review, therefore, sets the stage for the subsequent chapters, providing a 
 scholarly backdrop against which the research objectives can be further explored and developed. 
 It offers a structured exploration into how current practices, technological capabilities, and 
@@ -644,7 +649,7 @@ With the increasing scale of networks, security becomes an ever-greater challeng
 will play a critical role in scaling security measures, automatically adapting protections to 
 evolving threats and expanding network perimeters.
 
- The future of network automation is characterized by smarter, more proactive technologies that 
+ T he future of network automation is characterized by smarter, more proactive technologies that 
 reduce manual burdens and elevate the strategic impact of network management. The integration 
 of AI, the adoption of intent-based networking, the expansion of edge computing, and heightened 
 security and regulatory measures will shape the next generation of network automation, making 
@@ -652,7 +657,7 @@ networks more adaptive, secure, and aligned with business objectives. These tren
 highlight the growing sophistication of network automation technologies but also underscore the 
 need for continuous innovation in this field.
 
- In conclusion, the literature review presented in Chapter 2 has thoroughly explored the 
+  In conclusion, the literature review presented in Chapter 2 has thoroughly explored the 
 multifaceted landscape of network automation, examining its evolution, the pivotal role of opensource tools like Linux and Python, and the significant implications for security and future 
 trends. We have seen how network automation is not just a technological shift but a strategic 
 reorientation towards more efficient, flexible, and secure network management. The discussions 
@@ -660,7 +665,7 @@ underscore the critical nature of programmability and vendor neutrality, the cha
 integrating sophisticated automation technologies, and the promising integration of AI and ML 
 into network processes.
 
- As we transition from the theoretical and contextual groundwork laid in this chapter to the 
+  As we transition from the theoretical and contextual groundwork laid in this chapter to the 
 practical applications in Chapter 3, we will focus on 'Materials and Methods.' This next chapter 
 will detail the specific tools, technologies, and methodologies utilized in the implementation of 
 network automation within the scope of this research. It will provide a comprehensive look at 
