@@ -71,7 +71,7 @@ comparison—by identifying the gaps, controversies, and recent discoveries supp
 rationale of the research topically.
  The historical context presented in the available literature suggests a profound transition from 
 manual and time-consuming practices in network management to advanced automated methods. 
-At first, network management began with systems that were vendor-specific and demanded timeconsuming manual efforts from configuration to maintenance. According to the documented 
+At first, network management began with systems that were vendor-specific and demanded time consuming manual efforts from configuration to maintenance. According to the documented 
 sources, including the given two seminal PDFs – one of network programmability and another 
 one of SDN’s history – more flexible and viable management strategies were necessary when it 
 came to big and complicated networks.
@@ -643,6 +643,7 @@ ensuring that networks meet legal and regulatory standards at all times.
 With the increasing scale of networks, security becomes an ever-greater challenge. Automation 
 will play a critical role in scaling security measures, automatically adapting protections to 
 evolving threats and expanding network perimeters.
+
  The future of network automation is characterized by smarter, more proactive technologies that 
 reduce manual burdens and elevate the strategic impact of network management. The integration 
 of AI, the adoption of intent-based networking, the expansion of edge computing, and heightened 
@@ -650,6 +651,7 @@ security and regulatory measures will shape the next generation of network autom
 networks more adaptive, secure, and aligned with business objectives. These trends not only 
 highlight the growing sophistication of network automation technologies but also underscore the 
 need for continuous innovation in this field.
+
  In conclusion, the literature review presented in Chapter 2 has thoroughly explored the 
 multifaceted landscape of network automation, examining its evolution, the pivotal role of opensource tools like Linux and Python, and the significant implications for security and future 
 trends. We have seen how network automation is not just a technological shift but a strategic 
@@ -657,6 +659,7 @@ reorientation towards more efficient, flexible, and secure network management. T
 underscore the critical nature of programmability and vendor neutrality, the challenges of 
 integrating sophisticated automation technologies, and the promising integration of AI and ML 
 into network processes.
+
  As we transition from the theoretical and contextual groundwork laid in this chapter to the 
 practical applications in Chapter 3, we will focus on 'Materials and Methods.' This next chapter 
 will detail the specific tools, technologies, and methodologies utilized in the implementation of 
